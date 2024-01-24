@@ -3,7 +3,7 @@ import Tag from './Tag';
 import "./style.css"
 
 function Modal() {
-//Modal ->ChipsInput  Chip
+//Modal ->ChipsInput  Chip    vvvvvvvvvvvvv
     const [arrTags, setArrTags] = useState([]);
     const inputRef = useRef(null);
     const MAX_CHIPS = 5;
