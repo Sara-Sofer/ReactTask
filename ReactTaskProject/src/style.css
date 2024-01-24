@@ -1,0 +1,35 @@
+ .tag{
+  /*  /* background-color: theme('colors.green'); */
+    /* color: theme('colors.color-green'); */
+    /* border: theme('colors.border-green') solid 1px;   */
+    min-width: 3rem;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ff{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}   
+
+/* .save{
+    background-color: theme('colors.red');
+} */
+/* 
+.wrapper{
+    
+    border: theme('colors.grey') solid 1px; 
+} */
+
+.input{
+    /* color: theme('colors.grey-text');  */
+    width: 100%;
+background-color: white;
+}
+
+/* .removeTag{
+    color: theme('colors.grey-text'); 
+} */
