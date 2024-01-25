@@ -4,11 +4,11 @@ import Tag from './Tag';
 function TagsInput() {
     const [arrTags, setArrTags] = useState([]);
     const inputRef = useRef(null);
-    const MAX_CHIPS = 5;
+    const MAX_TAGS = 5;
 
     const addTag = () => {
         const inputValue = inputRef.current.value.trim();
-        if (arrTags.length < MAX_CHIPS && inputValue !== '') {
+        if (arrTags.length < MAX_TAGS && inputValue !== '') {
             setArrTags((prevTags) => [...prevTags, inputValue]);
             inputRef.current.value = '';
         }
@@ -28,9 +28,9 @@ function TagsInput() {
                     <input
                         type="text"
                         placeholder='Add a tag'
-                        className={`border-0 w-full bg-white outline-none text-sm pl-[10px] ${arrTags.length >= MAX_CHIPS ? 'cursor-not-allowed' : ''}`}
+                        className={`border-0 w-full bg-white outline-none text-sm pl-[10px] ${arrTags.length >= MAX_TAGS ? 'cursor-not-allowed' : ''}`}
                         ref={inputRef}
-                        disabled={arrTags.length >= MAX_CHIPS}
+                        disabled={arrTags.length >= MAX_TAGS}
                     />
                 </div>
                 <button className="rounded-sm float-right text-sm font-bold bg-[#fd3824] text-white w-[77px] h-8 mt-[10px]" onClick={addTag}>Save</button>
