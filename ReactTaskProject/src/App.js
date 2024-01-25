@@ -1,10 +1,10 @@
 import './App.css';
-import Modal from './Modal'
+import TagsInput from './TagsInput'
 
 function App() {
   return (
     <div className="App">
-      <Modal/>
+      <TagsInput/>
     </div>
   );
 }
