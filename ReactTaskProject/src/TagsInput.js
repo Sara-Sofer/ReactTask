@@ -56,13 +56,13 @@ const TagsInput = () => {
                 </div>
 
                 {inputValue && !currentSuggestion && suggestions.length === 0 && (
-                    <div className='text-left rounded border border-[#cccccc] bg-[#f8f8f8] mt-[1px] p-1'>
+                    <div className='absolute text-left rounded border border-[#cccccc] bg-[#f8f8f8] mt-[1px] p-1 w-[38rem]'>
                         No search results
                     </div>
                 )}
                 
                 {suggestions.length > 0 && (
-                    <ul className='text-left rounded border border-[#cccccc] bg-[#f8f8f8] mt-[1px]'>
+                    <ul className='absolute overflow-auto max-h-[240px] text-left rounded border border-[#cccccc] bg-[#f8f8f8] mt-[1px] w-[38rem]'>
                         {suggestions.map((suggestion, index) => (
                             <li key={index} onClick={() => handleSuggestionClick(suggestion)} className='p-0.5 ml-[8px]'>
                                 <div className='text-sm'>{suggestion.name}</div><div className='text-xs text-[#cccccc]'>{suggestion.capital}</div>
